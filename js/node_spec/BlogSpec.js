@@ -7,17 +7,17 @@ describe('blog creation', function() {
         testBlog = new Blog();
     });
 
-    it('should have a title attribute', function(){
+    it('should have a title attribute a', function(){
         expect(testBlog.title).toBeDefined();
     });
 
-    it('should have a null title', function() {
+    it('should have a null title ccc', function() {
         expect(testBlog.title).toBeNull();
     });
 
-    it('should have a title', function() {
-        testBlog.title = 'dummy ' ;
-        expect(testBlog.title).toBe('dummy');
+    it('should set the title', function() {
+        testBlog.setTitle('dummy');
+        expect(testBlog.title).toMatch('dummy');
     });
 
 });

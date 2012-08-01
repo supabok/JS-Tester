@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Sockets Test</title>
+    <script type="text/javascript">
+        var websockets_support = !!window.WebSocket;
+        console.log(websockets_support+' do we support websockets?!');
+    </script>
+    <script src="src/Chatroom.js"></script>
+</head>
+<body>
+    <h1>A Chatroom</h1>
+    <div id="chatlog"></div>
+    <input id="newmsg" /><br />
+    <input type="button" value="Send Message" id="sendmsg" />
+</body>
+</html>

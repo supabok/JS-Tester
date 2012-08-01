@@ -1,7 +1,13 @@
-/**
- * Created with JetBrains WebStorm.
- * User: epurino
- * Date: 12-07-30
- * Time: 3:22 PM
- * To change this template use File | Settings | File Templates.
- */
+Blog = function(title) {
+    this.title = typeof title !== 'undefined' ? title : null;
+}
+
+Blog.prototype.getTitle = function() {
+    return this.title;
+};
+
+Blog.prototype.setTitle = function(_val){
+    this.title = _val;
+}
+
+exports.Blog = Blog;
